@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+    background-color: #131313;
+    color: #EBEBEB;
+}
+
+/* Configurações corpo website */
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+   
+    border-radius: 2px;
+    
+  
+}
+
+/* Configurações nav(header) website */
+
+/* titutlo e menu */
+
+
+
+h1{
+  
+    margin-left: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 10px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+/* configurações title 'new crypto' */
+
+li{
+   
+    font-family:'Times New Roman', Times, serif;
+    display: inline-block;
+    font-size: 22px;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* configurações menu, categorias superiores */
+
+main{
+    width: 95%;
+    height: 100%;
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+/* configuração do corpo em  textos, form  e imagem */
+
+.left-msg{
+    width: 55%;
+}
+
+/* configuração de textos e imagens */
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 5%;
+    font-size: 30px;
+    font-weight: 200;
+    
+}
+
+
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75%;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: justify;
+}
+
+
+
+a{
+    color: #EBEBEB;
+    transition:  0.6s all;
+    margin-right: 20px;
+}
+
+
+a:hover{
+    color: #D3A854;
+
+}
+
+/* configurações menu e animações */
+
+
+
+
+.right-msg{
+    margin-top: 15px;
+    width: 45%;
+}
+
+/* configuração de formulario */
+
+.card{
+    background-color: #626b6d18;
+    height: 45%;
+    color: #D3A854;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 4px #D3A854;
+    padding: 25px;
+}
+
+/* personalizando card */
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+input{
+    background-color: #ebebebc7;
+    margin-top: 20px;
+    height: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: small;
+}
+
+h4{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 300;
+
+}
+
+#btn-enviar{
+    height: 35px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+img{
+    margin-left: 110px;
+    width: 300px;
+    height: 310px;
+}
+
+#color-text{
+    
+    color: #D3A854;
+}
+
+#btn-investir{
+    border: 2px solid #D3A854;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#btn-investir:hover{
+    background-color: #d3a954bb;
+    color: #EBEBEB;
+}
+
+
+#btn-enviar:hover{
+    color: #EBEBEB;
+    background-color: #D3A854;
+    transition: 0.8s all;
+}
+
+
+
+
+
+
+
+/* mobile responsivo */
+
+@media screen and (max-width: 750px){
+
+    header{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+
+
+    h1{
+        text-align: center;
+    }
+    li{
+        width: 10%;
+        padding: 5px;
+    }
+
+    .left-msg{
+        width: 100%;
+    }
+
+    #btn-investir{
+        display: none;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 15px;
+        margin-left: 10px;
+    
+    }
+
+    img{
+       display: none;
+        }
+
+    .card{
+        align-items: center;
+        width: 160%;
+        height: 150%;
+    }
+
+}
